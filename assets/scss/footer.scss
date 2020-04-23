@@ -1,0 +1,28 @@
+footer {
+  background: $darkBlue;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .departments {
+    display: flex;
+    justify-content: space-between;
+    padding: 215px 0 150px;
+    &__single {
+      align-self: center;
+    }
+  }
+  address {
+    img {
+      padding: 0 5px;
+    }
+  }
+  small {
+    color: $white;
+    padding: 15px;
+    font-size: $size-copyright;
+    font-family: $copyright-font;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+}

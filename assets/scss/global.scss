@@ -1,0 +1,21 @@
+.container-80 {
+  width: 1140px;
+  margin: 0 auto;
+}
+.sectionTitle {
+  font-size: $size-title;
+  font-family: $title-font;
+  text-transform: uppercase;
+  line-height: 1.124;
+  font-weight: 300;
+  margin: 20px 0;
+  &--grey {
+    color: $grey;
+  }
+  &--white {
+    color: $white;
+  }
+  &--black {
+    color: $black;
+  }
+}

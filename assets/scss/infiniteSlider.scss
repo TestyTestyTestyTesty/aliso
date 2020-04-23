@@ -1,0 +1,8 @@
+.infiniteSlider {
+  font-size: $size-inifniteSlider;
+  &__single {
+    padding: 50px;
+    color: $grey;
+    font-family: $title-font;
+  }
+}

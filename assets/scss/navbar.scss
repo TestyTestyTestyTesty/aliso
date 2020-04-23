@@ -1,0 +1,36 @@
+.header {
+  background: rgba($black, 0.5);
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  &__logo {
+    padding: 36px 56px 36px;
+    border-right: 1px solid $white;
+  }
+  .navigation {
+    display: flex;
+    align-items: flex-end;
+    padding: 36px 56px 36px;
+    ul {
+      display: flex;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      .navigation__element {
+        padding: 20px;
+        color: $white;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-family: $title-font;
+        font-size: $size-menu;
+        letter-spacing: 2px;
+        &--active {
+          color: $red;
+        }
+      }
+    }
+  }
+}

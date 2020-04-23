@@ -1,0 +1,47 @@
+.experience {
+  position: relative;
+  overflow: hidden;
+  &::before {
+    position: absolute;
+    right: -230px;
+    bottom: 20px;
+    content: url(../img/fancySarivo.png);
+  }
+  .container-80 {
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    .shortDescription {
+      background: $grey;
+      padding: 75px 85px 40px 45px;
+      font-family: $title-font;
+      font-size: $size-standard;
+      line-height: 28px;
+      color: $darkGrey;
+    }
+    .fancyBox {
+      font-family: $title-font;
+      z-index: 1;
+      position: relative;
+      &__ponad {
+        text-transform: capitalize;
+        position: absolute;
+        top: 100px;
+        left: 210px;
+      }
+      &__20 {
+        font-size: 120px;
+        position: absolute;
+        top: 100px;
+        left: 200px;
+      }
+      &__lat {
+        font-size: $size-menu;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        position: absolute;
+        top: 200px;
+        left: 370px;
+      }
+    }
+  }
+}

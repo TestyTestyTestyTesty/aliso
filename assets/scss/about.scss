@@ -1,0 +1,39 @@
+.about {
+  padding-top: 40px;
+  &__article {
+    display: grid;
+    grid-template-columns: 45% 50%;
+    grid-gap: 5%;
+    padding: 25px 0;
+    p {
+      font-size: $size-standard;
+      font-family: $basic-font;
+      line-height: 32px;
+      text-align: justify;
+      margin: 0;
+    }
+    img {
+      max-width: 100%;
+      object-fit: cover;
+
+      &:after {
+        content: "";
+        height: 100px;
+        width: 100px;
+        background: $red;
+        position: absolute;
+        top: -10px;
+      }
+    }
+    &--reversed {
+      p {
+        font-size: $size-text-smaller;
+        line-height: 24px;
+      }
+      img {
+        grid-column-start: 1;
+        grid-row-start: 1;
+      }
+    }
+  }
+}
